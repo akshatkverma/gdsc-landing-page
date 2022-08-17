@@ -684,7 +684,7 @@ class Base {
 const challenge_btn = document.getElementById("challenge_btn");
 if (challenge_btn !== null) {
   challenge_btn.onclick = () => {
-    window.location.href = "https://challenge.dscnita.ml";
+    window.location.href = "https://dscnita2022.tech/";
   };
 }
 
