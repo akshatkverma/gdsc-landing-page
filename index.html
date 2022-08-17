@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+
+░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄
+░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄
+░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█
+░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░█
+░▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░█
+█▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒█
+█▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█
+░█▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█
+░░█░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█
+░░░█░░██░░▀█▄▄▄█▄▄█▄████░█
+░░░░█░░░▀▀▄░█░░░█░███████░█
+░░░░░▀▄░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█
+░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░█
+░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█
+░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█
+ 
+There's nothing here for you to see.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website of DSC NITA" />
+    <meta name="author" content="Team DSC" />
+    <link rel="icon" href="./public/favicon.ico" />
+    <title>DSC NITA</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      const isMobile = navigator.userAgent.match(
+        /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile Safari|MicroMessenger/i
+      );
+
+      if (isMobile) {
+        window.alert(
+          "DSC NITA has so much to offer that we must request you to find a larger screen. You won't be disappointed."
+        );
+      }
+    </script>
+    <div class="relative w-screen h-screen">
+      <div class="childClass logoChild">
+        <img src="./public/logo.png" style="width: 40vw" />
+      </div>
+      <audio src="./public/song.mp3" type="audio/mpeg" autoplay hidden loop></audio>
+      <div
+        class="childClass continueBtn flip-scale-up-diag-1"
+        style="display: none"
+        id="contBtn"
+      >
+        <div class="button" id="challenge_btn">
+          <span class="button__mask"></span>
+          <span class="button__text">Jump Off --></span>
+          <span class="button__text button__text--bis">Jump Off --></span>
+        </div>
+      </div>
+      <div class="grid-icosahedron h-full w-full bg-black"></div>
+      <div class="childClass textChild">
+        <div class="container">
+          <div id="countdown">
+            <ul>
+              <li><span id="days"></span>Days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./public/script.js"></script>
+    <script src="./public/main.js"></script>
+  </body>
+
+<!--   
+  ░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄
+  ░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄
+  ░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█
+  ░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░█
+  ░▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░█
+  █▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒█
+  █▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█
+  ░█▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█
+  ░░█░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█
+  ░░░█░░██░░▀█▄▄▄█▄▄█▄████░█
+  ░░░░█░░░▀▀▄░█░░░█░███████░█
+  ░░░░░▀▄░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█
+  ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░█
+  ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█
+  ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█ 
+
+-->
+  
+
+</html>
